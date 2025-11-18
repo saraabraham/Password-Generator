@@ -4,7 +4,7 @@ A simple web-based random password generator built with HTML, CSS, and JavaScrip
 
 ---
 
-## 🚀 Features
+## Features
 
 - Generate **two** passwords at once  
 - Specify custom password **length**  
