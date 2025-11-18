@@ -5,6 +5,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #1F2937;
 }
 
@@ -49,7 +50,7 @@ button {
 
 hr {
     border: 1px solid #2F3E53;
-    margin: 30px 60px 0px 50px;
+    margin: 20px 60px 10px 50px;
 }
 
 .fields {
@@ -59,40 +60,28 @@ hr {
     justify-content: center;
 }
 
-#p1-el {
-    margin: 30px;
+#p1-el,
+#p2-el {
+    margin: 10px;
     margin-left: 15px;
     background-color: #2F3E53;
     padding: 20px 10px 10px 10px;
     text-align: center;
-    width: 600px;
-    height: 39px;
+    width: 200px;
+    height: 30px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: #55F991;
-    font-size: 25px;
+    font-size: 15px;
     padding: 50px auto 20px;
 
 }
 
-#p2-el {
-    margin: 30px;
-    background-color: #2F3E53;
-    padding: 20px 10px 10px 10px;
-    text-align: center;
-    width: 600px;
-    height: 39px;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #55F991;
-    font-size: 25px;
-    padding: auto;
-}
 
 .custom {
     background: #2F3E53;
     padding: 20px;
-    margin-top: 5px;
+    margin-top: 2px;
     border-radius: 12px;
     max-width: 420px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -188,13 +177,14 @@ input:checked+.slider:before {
 .copy-btn {
     padding: 6px 12px;
     border: none;
-    height: 39px;
+    height: 30px;
     background: #4caf50;
     color: white;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s;
     margin: 0px;
+    font-size: 15px;
 }
 
 .copy-btn:hover {
