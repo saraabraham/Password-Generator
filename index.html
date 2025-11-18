@@ -1,16 +1,57 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1><div id="title">Generate a</div> random password</h1>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            <div id="title">Generate a</div> random password
+        </h1>
         <h2>Never use an insecure password again.</h2>
-        <button onclick="generate()">Generate passwords</button>
-        <hr></hr>
-        <div class="fields">
-            <p id="p1-el"></p>
-            <p id="p2-el"></p>
+
+    </div>
+    <button onclick="generate()">Generate passwords</button>
+    <hr>
+    </hr>
+    <div class="fields">
+        <div class="password-row">
+            <div id="p1-el"></div>
+            <button class="copy-btn" onclick="copyPassword('p1-el')">Copy</button>
         </div>
-        <script src="index.js"></script>
-    </body>
+
+        <div class="password-row">
+            <div id="p2-el"></div>
+            <button class="copy-btn" onclick="copyPassword('p2-el')">Copy</button>
+        </div>
+    </div>
+    <div class="custom">
+        <h3>Customizations (Optional)</h3>
+
+        <h4>
+            Set password length:
+            <input type="text" name="length" id="length">
+        </h4>
+        <div class="option-row">
+            <label>Numbers only:</label>
+            <label class="switch">
+                <input type="checkbox" id="numbers-only">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="option-row">
+            <label>Symbols only:</label>
+            <label class="switch">
+                <input type="checkbox" id="symbols-only">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
 </html>
